@@ -1,0 +1,15 @@
+import numpy as np
+from matplotlib.figure import Figure
+
+# draw 
+fg=Figure()
+ax=fg.gca()
+ax.plot(range(4))
+
+# save image to file
+fg.savefig('/tmp/x.png')
+
+import os
+# start image viewer
+os.system('cygstart /tmp/x.png')
+
